@@ -1,0 +1,1 @@
+My name is Ruxin Zhang, and you can call me Alisha. I am a fourth year Computer Science student. My idea for this course recommender is that to help students adding classes by providing avaliable courses during a particular quarter that students have to take to meet their graduatation requirements.
