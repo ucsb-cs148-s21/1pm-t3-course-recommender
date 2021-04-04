@@ -1,0 +1,1 @@
+Hi, my name is Justin Surmani and I'm a third-year CS major from Thousand Oaks, California. My ideas for the app include that it should recommend the most important classes for each students major progress.
