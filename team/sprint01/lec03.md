@@ -2,7 +2,7 @@
 
 Mentor: Vincent Tieu
 
-Meeting Time: Lect03
+Meeting Time: Lec03
 
 Type of Meeting: Initial Sprint Planning
 
