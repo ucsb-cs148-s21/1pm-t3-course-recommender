@@ -2,9 +2,9 @@
 
 Mentor: Vincent Tieu
 
-Meeting Time: Lec03
+Meeting Time: Friday 9:15 AM
 
-Type of Meeting: Initial Sprint Planning
+Type of Meeting: First Sprint
 
 Team: Chandler Ott [x], Jessica Zhang [x], Jiarui Zhu [x], Ruxin Zhang [x], Justin Surmani [x]
 
