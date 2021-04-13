@@ -10,4 +10,4 @@ Team: Chandler Ott [x], Jessica Zhang [x], Jiarui Zhu [x], Ruxin Zhang [x], Just
 
 Scribed Discussion:
 
-We agree on to implement the web app based on Spring Boot and React. 
+We come up with our user journey and our MVP.  
