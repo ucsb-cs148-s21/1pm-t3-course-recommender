@@ -16,3 +16,5 @@ Ruxin Zhang: ruxin827
 Justin Surmani: justinsurmani
 
 Chandler Ott: chandlerott
+
+Tech Stack: React + Springboot, deployed on Heroku
