@@ -3,7 +3,7 @@
 
 Project name: UCSB Course Recommender Application
 
-Desription: A web application that helps CS students choose their course by listing a list of major courses and GE courses that they can take to count towards their graduation
+Description: A web application that helps CS students choose their course by listing a list of major courses and GE courses that they can take to count towards their graduation
 
 Team info:
 
