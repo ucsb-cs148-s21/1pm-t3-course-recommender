@@ -7,9 +7,8 @@
 
 * a goal: Get base app with both frameworks pushed to the repo
           
-* a change: Improve Communication 
-Whenever you have a conflict for a team meeting, let the team know ahead of time.
-Be more open about current state of the project and what everyone is working on.
+* a change: Our group will focus on improving communication. Whenever you have a conflict for a team meeting, let the team know ahead of time.
+ Additionally, be more open about current state of the project and what everyone is working on.
                              
 * a measurement: Move issue #10 and #7 from in progress to done by the end of the week.
  
