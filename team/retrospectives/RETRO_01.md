@@ -1,8 +1,8 @@
 # Date of Retrospective: 04/20/21
 
-* Led by: name-goes-here
-* Present: name1, name2, ... , nameN
-* Absent: name1, name2, ...
+* Led by: Jiarui Zhu
+* Present: Justin, Ruxin, Chandler, Jiarui
+* Absent:
 
 ## Action item
 
