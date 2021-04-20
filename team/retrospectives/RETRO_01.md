@@ -2,7 +2,7 @@
 
 * Led by: Jiarui Zhu
 * Present: Justin, Ruxin, Chandler, Jiarui
-* Absent:
+* Absent: Jessica
 
 ## Action item
 
