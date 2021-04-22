@@ -7,4 +7,4 @@
 | Thu 04/15 | Chandler Ott      | Led team discussion about Retros, Leadership, Learning | 
 | Thu 04/15 | Ruxin Zhang       | Led Sprint03                                           | 
 | Tue 04/20 | Jack Zhu          | Led Retros                                             | 
-
+| Thu 04/22 | Jessica Zhang     | Sprint planning towards MVP                            |
