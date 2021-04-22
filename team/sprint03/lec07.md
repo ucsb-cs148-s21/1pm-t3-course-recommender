@@ -1,10 +1,10 @@
 # Project: UCSB Course Recommender
 
-Mentor: Vincent Tieu
+Mentor: Shiran Wang
 
 Meeting Time: Lec07
 
-Type of Meeting: Sprint Planning
+Type of Meeting: Sprint Planning towards MVP
 
 Team:  Jessica Zhang [x], Chandler Ott [x], Jiarui Zhu [x], Ruxin Zhang [x], Justin Surmani [x]
 
