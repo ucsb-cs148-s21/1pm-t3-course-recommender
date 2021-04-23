@@ -24,3 +24,19 @@ Tech Stack: React + Springboot, deployed on Heroku
 
 
 https://secure-mesa-73901.herokuapp.com/
+
+
+## Prerequisites
+1. Java 11 or above
+
+2. maven
+
+3. Configure the `localhost.JSON` file. Copy the `loalhost.JSON.Sample` from the repo and rename the copy to `localhost.JSON`. Go to https://github.com/settings/applications/new to get a new OAuth App. Then, copy and paste the ClientID and ClientSecret into the `localhost.JSON`.
+
+## How to run it on localhost
+
+`cd` into `backend`
+
+`. env.sh`
+
+`mvn spring-boot:run` then go to http://localhost:8080
