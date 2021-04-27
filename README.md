@@ -33,12 +33,21 @@ https://secure-mesa-73901.herokuapp.com/
 
 2. maven
 
-3. Configure the `localhost.JSON` file. Copy the `loalhost.JSON.Sample` from the repo and rename the copy to `localhost.JSON`. Go to https://github.com/settings/applications/new to get a new OAuth App. Then, copy and paste the ClientID and ClientSecret into the `localhost.JSON`.
+3. Node.js (`npm install`)
 
 ## How to run it on localhost
 
-`cd` into `backend`
+* Run the backend API first
 
-`. env.sh`
+```
+cd springboot-backend
+mvn clean install
+mvn spring-boot:run
+```
 
-`mvn spring-boot:run` then go to http://localhost:8080
+* Then run the frontend cient (with a second terminal window)
+
+```
+cd react-frontend
+npm start
+```
