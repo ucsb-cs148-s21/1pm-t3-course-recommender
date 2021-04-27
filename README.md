@@ -33,7 +33,7 @@ https://secure-mesa-73901.herokuapp.com/
 
 2. maven
 
-3. Node.js (npm install)
+3. Node.js (`npm install`)
 
 ## How to run it on localhost
 
