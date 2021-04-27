@@ -8,3 +8,4 @@
 | Thu 04/15 | Ruxin Zhang       | Led Sprint03                                           | 
 | Tue 04/20 | Jack Zhu          | Led Retros                                             | 
 | Thu 04/22 | Jessica Zhang     | Sprint planning towards MVP                            |
+| Tue 04/27 | Justin Surmani    | Daily standup, discussing final work for MVP           |
