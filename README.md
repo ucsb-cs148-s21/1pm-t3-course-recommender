@@ -41,9 +41,7 @@ https://secure-mesa-73901.herokuapp.com/
 
 ```
 cd springboot-backend
-
 mvn clean install
-
 mvn spring-boot:run
 ```
 
@@ -51,7 +49,5 @@ mvn spring-boot:run
 
 ```
 cd react-frontend
-
 npm start
-
 ```
