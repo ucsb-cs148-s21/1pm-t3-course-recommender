@@ -51,3 +51,7 @@ mvn spring-boot:run
 cd frontend_new
 npm start
 ```
+
+## Known Problem
+
+* Ensure Java version on local machine is compatible. If you get a build failure when running springboot-backend, check the pom.xml file and look for java properties tag. There, you can check if your installed version of java is compatible, or else you can change it down to 11 or 14 if required.
