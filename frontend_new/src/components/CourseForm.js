@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './CourseForm.css';
 
 export const CourseForm = () => {
     let [selectedCourses, setSelectedCourses] = useState([]);
@@ -35,8 +36,8 @@ export const CourseForm = () => {
             courseName: "CMPSC 40",
             department: "CMPSC",
             prerequisite: "CMPSC 16",
-        }
-    ]
+        },
+    ];
 
     const courseSelected = event => {
         event.preventDefault();
@@ -56,24 +57,27 @@ export const CourseForm = () => {
 
     return (
         <>
-            <h1>Header</h1>
+            <div class="theHeader"><p>Enter the courses you have taken:</p></div>
+            <h1></h1>
             <form onSubmit={handleFormSubmit} action="">
-                <h5>Enter the courses you have taken:</h5>
                 {
                     courses.map((course, index) => {
                         let { id, courseName, department, prerequisite } = course;
 
                         return (
-                            <div>
+                            <div class="checkCourses">
                                 <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onClick={courseSelected}/>
                                 <label for={courseName}>{courseName}</label>
                             </div>
                         )
                     })
                 }
+                <div class="submitButton">
                 <input type="submit" value="Submit"></input>
+                </div>
             </form>
         </>
 
     )
 }
+export default CourseForm;

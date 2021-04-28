@@ -1,73 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import CourseComponent from './components/CourseComponent';
-// import CourseForm from './components/CourseForm';
+import "./App.css";
+import { Component } from "react";
+import Tablist from "./components/tablist";
+import Body from "./components/body";
 
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import { CourseForm } from './components/CourseForm';
-
-
-export default function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Input">Input</Link>
-            </li>
-            <li>
-              <Link to="/Result">Result</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/Input">
-            <Input />
-          </Route>
-          <Route path="/Result">
-            <Result />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      active: 1,
+    };
+    this.changeTab = (id) => {
+      this.setState({
+        active: id,
+      });
+    };
+  }
+  render() {
+    const tabs = [
+      {
+        id: 1,
+        title: "Home",
+      },
+      {
+        id: 2,
+        title: "Course List",
+      },
+    ];
+    return (
+      <div className="App">
+        <div className="nav_bar">
+          <Tablist
+            tabs={tabs}
+            activeTab={this.state.active}
+            ctab={this.changeTab}
+          />
+        </div>
+        <div className="body">
+          <Body activeTab={this.state.active} />
+        </div>
       </div>
-    </Router>
-  );
+    );
+  }
 }
 
-function Home() {
-  return (
-    <div className="App">
-        <CourseComponent />
-    </div>
-  );
-}
-
-function Input() {
-  return (
-    <div className="App">
-        <CourseForm />
-    </div>
-  );
-}
-
-function Result() {
-  return <h2>Result</h2>;
-}
-
-// export default App;
+export default App;
