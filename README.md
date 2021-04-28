@@ -40,7 +40,7 @@ https://secure-mesa-73901.herokuapp.com/
 * Run the backend API first
 
 ```
-cd springboot-backend
+cd springboot_new
 mvn clean install
 mvn spring-boot:run
 ```
@@ -48,6 +48,6 @@ mvn spring-boot:run
 * Then run the frontend cient (with a second terminal window)
 
 ```
-cd react-frontend
+cd frontend_new
 npm start
 ```
