@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+import { useHistory } from 'react-router-dom';
 
 export const CourseForm = () => {
     let [selectedCourses, setSelectedCourses] = useState([]);
-
+    let history = useHistory();
 
     // TODO: add an API call to get courses and then swap these hardcoded courses out:
     const courses = [
@@ -39,7 +40,7 @@ export const CourseForm = () => {
     ]
 
     const courseSelected = event => {
-        event.preventDefault();
+        // event.preventDefault();
         let { value, checked } = event.target;
         // TODO: if the value was previously checked and now checked is false then the item must be removed from the list
         selectedCourses.find(course => course === value)
@@ -49,24 +50,33 @@ export const CourseForm = () => {
     }
 
     const handleFormSubmit = event => {
-        event.preventDefault();  
+        event.preventDefault();
+        // console.log(JSON.stringify(selectedCourses));
         // debugger;
-        let { value } = event.target;      
+        let { value } = event.target;
+
+        // Clear selectedCourses from local storage (make room for new selected courses)
+        localStorage.removeItem(selectedCourses);
+        
+        // Set selectedCourses in local storage
+        localStorage.setItem('selectedCourses', JSON.stringify(selectedCourses));
+
+        history.push('/Result');   
     }
 
     return (
         <>
             <h1>Header</h1>
-            <form onSubmit={handleFormSubmit} action="">
+            <form onSubmit={handleFormSubmit}>
                 <h5>Enter the courses you have taken:</h5>
                 {
                     courses.map((course, index) => {
                         let { id, courseName, department, prerequisite } = course;
 
                         return (
-                            <div>
-                                <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onClick={courseSelected}/>
-                                <label for={courseName}>{courseName}</label>
+                            <div key={`course-${index}`}>
+                                <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected}/>
+                                <label htmlFor={courseName}>{courseName}</label>
                             </div>
                         )
                     })
@@ -74,6 +84,5 @@ export const CourseForm = () => {
                 <input type="submit" value="Submit"></input>
             </form>
         </>
-
     )
 }

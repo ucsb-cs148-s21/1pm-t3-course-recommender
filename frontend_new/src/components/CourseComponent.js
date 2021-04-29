@@ -23,7 +23,6 @@ class CourseComponent extends React.Component {
                 <table className = "table table-striped">
                     <thead>
                         <tr>
-
                             <td> Course Id</td>
                             <td> Course courseName</td>
                             <td> Course department</td>
@@ -43,12 +42,9 @@ class CourseComponent extends React.Component {
                                 </tr>
                             )
                         }
-
                     </tbody>
                 </table>
-
             </div>
-
         )
     }
 }
