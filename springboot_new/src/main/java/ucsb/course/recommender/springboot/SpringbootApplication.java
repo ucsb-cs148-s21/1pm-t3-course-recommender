@@ -20,6 +20,7 @@ public class SpringbootApplication implements CommandLineRunner {
 	public void run(String...args) throws Exception {
 		this.courseRepository.save(new Course("CMPSC 148", "CMPSC", "CMPSC 32"));
 		this.courseRepository.save(new Course("CMPSC 170", "CMPSC", "CMPSC 130A"));
+		// TODO: add more courses to make the Home page more comprehensive
 	}
 
 }

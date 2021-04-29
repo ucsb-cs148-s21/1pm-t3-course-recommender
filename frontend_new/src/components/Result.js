@@ -37,6 +37,7 @@ export const Result = () => {
             department: "CMPSC",
             prerequisite: "CMPSC 16",
         }
+        // TODO: add more courses to this list to make the survery comprehensive
     ]
 
     const selectedCourses = JSON.parse(localStorage.getItem('selectedCourses'));
