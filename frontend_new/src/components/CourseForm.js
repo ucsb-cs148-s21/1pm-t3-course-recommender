@@ -36,7 +36,14 @@ export const CourseForm = () => {
             courseName: "CMPSC 40",
             department: "CMPSC",
             prerequisite: "CMPSC 16",
+        },
+        {
+            id: 6,
+            courseName: "CMPSC 48",
+            department: "CMPSC",
+            prerequisite: "CMPSC 16",
         }
+        // TODO: add more courses to this list to make the survery comprehensive
     ]
 
     const courseSelected = event => {
