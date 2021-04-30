@@ -27,7 +27,7 @@ Tech Stack: React + Springboot, deployed on Heroku
 
 https://secure-mesa-73901.herokuapp.com/
 
-==================================================================
+====
 # Installation
 
 ## Prerequisites
