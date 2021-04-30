@@ -127,7 +127,7 @@
 					<archive>
 						<manifest>
 							<!-- full package name of class with the main you want to run -->
-							<mainClass>ucsb.course.recommender.springboot</mainClass>
+							<mainClass>ucsb.course.recommender.springboot.SpringbootApplication</mainClass>
 
 						</manifest>
 					</archive>
