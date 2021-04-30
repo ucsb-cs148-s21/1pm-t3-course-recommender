@@ -25,7 +25,7 @@ Chandler Ott: chandlerott
 Tech Stack: React + Springboot, deployed on Heroku
 
 
-https://secure-mesa-73901.herokuapp.com/
+https://ucsb-course-recommender.herokuapp.com/
 
 
 # Installation
