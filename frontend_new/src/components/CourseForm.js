@@ -123,7 +123,7 @@ export const CourseForm = () => {
         // Set selectedCourses in local storage
         localStorage.setItem('selectedCourses', JSON.stringify(selectedCourses));
 
-        history.push('/Result');   
+//         history.push('/Result');   
     }
 
     return (
