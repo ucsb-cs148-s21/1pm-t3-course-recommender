@@ -25,6 +25,10 @@ class App extends Component {
         id: 2,
         title: "Course List",
       },
+      {
+        id: 3,
+        title: "Result",
+      }
     ];
     return (
       <div className="App">

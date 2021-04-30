@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Itab from './indtab';
+import "../App.css";
 
 class Tablist extends Component{
     render(){
