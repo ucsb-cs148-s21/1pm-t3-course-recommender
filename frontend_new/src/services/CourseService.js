@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const COURSES_REST_API_URL = 'https://t3-test-course-rec.herokuapp.com/api/courses';
+const COURSES_REST_API_URL = 'https://ucsb-course-recommender.herokuapp.com/api/courses';
 
 class CourseService {
 
