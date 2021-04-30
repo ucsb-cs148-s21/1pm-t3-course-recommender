@@ -55,7 +55,7 @@
 				<artifactId>frontend-maven-plugin</artifactId>
 				<version>1.6</version>
 				<configuration>
-					<workingDirectory>javascript</workingDirectory>
+					<workingDirectory>frontend_new</workingDirectory>
 					<installDirectory>target</installDirectory>
 				</configuration>
 				<executions>
@@ -98,7 +98,7 @@
 						<configuration>
 							<target combine.children="append">
 								<copy todir="${project.build.directory}/classes/public">
-									<fileset dir="${project.basedir}/src/build" />
+									<fileset dir="${project.basedir}/frontend_new/build" />
 								</copy>
 							</target>
 						</configuration>
