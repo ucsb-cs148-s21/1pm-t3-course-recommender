@@ -42,6 +42,60 @@ export const CourseForm = () => {
             courseName: "CMPSC 48",
             department: "CMPSC",
             prerequisite: "CMPSC 16",
+        },
+        {
+            id: 7,
+            courseName: "CMPSC 64",
+            department: "CMPSC",
+            prerequisite: "CMPSC 16",
+        },
+        {
+            id: 8,
+            courseName: "CMPSC 111",
+            department: "CMPSC",
+            prerequisite: "CMPSC 24",
+        },
+        {
+            id: 9,
+            courseName: "CMPSC 130A",
+            department: "CMPSC",
+            prerequisite: "CMPSC 40",
+        },
+        {
+            id: 10,
+            courseName: "CMPSC 130B",
+            department: "CMPSC",
+            prerequisite: "CMPSC 130A",
+        },
+        {
+            id: 11,
+            courseName: "CMPSC 138",
+            department: "CMPSC",
+            prerequisite: "CMPSC 40",
+        },
+        {
+            id: 12,
+            courseName: "CMPSC 154",
+            department: "CMPSC",
+            prerequisite: "CMPSC 64",
+        },
+        {
+            id: 13,
+            courseName: "CMPSC 160",
+            department: "CMPSC",
+            prerequisite: "CMPSC 138",
+        },
+        {
+            id: 14,
+            courseName: "CMPSC 162",
+            department: "CMPSC",
+            prerequisite: "CMPSC 138",
+        },
+        {
+            id: 15,
+            courseName: "CMPSC 170",
+            department: "CMPSC",
+            prerequisite: "CMPSC 154",
         }
         // TODO: add more courses to this list to make the survery comprehensive
     ]
