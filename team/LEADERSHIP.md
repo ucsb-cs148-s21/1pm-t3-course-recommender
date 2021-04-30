@@ -9,3 +9,4 @@
 | Tue 04/20 | Jack Zhu          | Led Retros                                             | 
 | Thu 04/22 | Jessica Zhang     | Sprint planning towards MVP                            |
 | Tue 04/27 | Justin Surmani    | Daily standup, discussing final work for MVP           |
+| Thu 04/29 | Jack Zhu          | Finishing up our MVP and discussing future plans       |

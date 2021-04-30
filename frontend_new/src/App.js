@@ -2,9 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CourseComponent from './components/CourseComponent';
-// import CourseForm from './components/CourseForm';
-
-
+import { Result } from './components/Result';
 import {
   BrowserRouter as Router,
   Switch,
@@ -66,8 +64,6 @@ function Input() {
   );
 }
 
-function Result() {
-  return <h2>Result</h2>;
-}
+
 
 // export default App;
