@@ -118,22 +118,6 @@
 				<version>3.0.0-M3</version>
 			</plugin>
 
-
-			<!-- Fix the error
-		Exit code: 1 - javadoc: error - The code being documented uses modules
-		but the packages defined in http://docs.oracle.com/javase/8/docs/api/
-		are in the unnamed module. -->
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<configuration>
-					<source>11</source>
-				</configuration>
-				<version>3.1.0</version>
-			</plugin>
-
-
 			<!-- Make jar file executable -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
