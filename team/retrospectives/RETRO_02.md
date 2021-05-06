@@ -1,7 +1,7 @@
 # Retro #2 05/06/21 or 05/07/21
 
 * Led by: Jessica
-* Present: Justin, Ruxin, Chandler, Jiarui, Jiarui
+* Present: Justin, Ruxin, Chandler, Jiarui, Jessica
 
 ## Action item
 
