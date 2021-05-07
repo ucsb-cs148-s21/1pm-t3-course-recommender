@@ -11,3 +11,4 @@
 | Tue 04/27 | Justin Surmani    | Daily standup, discussing final work for MVP           |
 | Thu 04/29 | Jack Zhu          | Finishing up our MVP and discussing future plans       |
 | Thu 05/06 | Jessica Zhang     | Led Second Retrospective                               |
+| Thu 05/06 | Jessica Zhang     | Led Third Sprint Planning                              |
