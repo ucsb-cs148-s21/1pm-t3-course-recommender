@@ -22,5 +22,5 @@
 * The retro went well since we had successfully identified the issue and made plan to improve on it.
 * For the next retro, it would be great to ask the team memebers to think ahead the issues we have in the past so we can directly discuss about them.
 
-##Outcome
+## Outcome
 * We reached our goal by coming to meetings more prepared to minimize downtime and maximize time spent working on issues. Also, we improved our communication by staying in more frequent contact through Slack and meetings outside of section.
