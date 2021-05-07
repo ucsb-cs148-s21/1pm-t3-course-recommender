@@ -127,23 +127,31 @@ export const CourseForm = () => {
 
     return (
         <>
-            <h1>Header</h1>
-            <form onSubmit={handleFormSubmit}>
+        <div className="container">
+            <div className="title-container" style={{ textAlign:'center', marginTop: 25 }}>
+                <h1>Course Survey</h1>
                 <h5>Enter the courses you have taken:</h5>
-                {
-                    courses.map((course, index) => {
-                        let { id, courseName, department, prerequisite } = course;
+            </div>
+            <div className="form-container" style={{ alignItems:'center', justifyContent:'center', display: 'flex', flexDirection: 'column' }}>
+                <form onSubmit={handleFormSubmit} style={{ textAlign:'center', columnCount:3}}>
+                    {
+                        courses.map((course, index) => {
+                            let { id, courseName, department, prerequisite } = course;
 
-                        return (
-                            <div key={`course-${index}`}>
-                                <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected}/>
-                                <label htmlFor={courseName}>{courseName}</label>
-                            </div>
-                        )
-                    })
-                }
-                <input type="submit" value="Submit"></input>
-            </form>
+                            return (
+                                <div key={`course-${index}`} style={{ minWidth:200}}>
+                                    <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected} style= {{ marginRight:10 }}/>
+                                    <label htmlFor={courseName}>{courseName}</label> 
+                                </div>
+                            )
+                        })
+                    }
+                </form>
+                <div style={{ alignContent:'center'}}>
+                    <input type="submit" value="Submit" style={{ alignSelf:'center' }}></input>
+                </div>
+            </div>
+        </div>
         </>
     )
 }
