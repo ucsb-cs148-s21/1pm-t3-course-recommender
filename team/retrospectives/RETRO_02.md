@@ -12,3 +12,9 @@
 ## Optional
 
 * Update the Kanban board more often with subtasks everyone is working on
+
+## Retro Assessment
+
+* I just go over the three points above and after the MVP, we already have a lot to retrospect on. 
+* It went pretty well. We come up with the goal and we agree on the change to make. 
+* Maybe leading the team to retro some important event that had been through would be great. 
