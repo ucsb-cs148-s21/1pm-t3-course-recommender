@@ -14,5 +14,5 @@ Scribed Discussion:
 
 * Everyone in the group must have been assigned a task on the kanban board that was moved into the done column by this Friday 5/14.
 
-* Add more smaller issues/features to the Kanban board so that everyone can complete an issue by Friday.
+* Add more smaller issues (or breakup large issues into smaller issues) to the Kanban board so that everyone can complete an issue by Friday.
 
