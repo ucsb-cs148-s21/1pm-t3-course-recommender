@@ -1,4 +1,5 @@
 import React from 'react';
+import AuthNav from './AuthNav';
 import {
   Nav,
   NavLink,
@@ -13,7 +14,7 @@ const NavBar = () => {
         <NavLink to='/Survey'activeStyle> Home </NavLink>
           <NavLink to='/Input' activeStyle> Course List </NavLink>
           <NavLink to='/Result' activeStyle> Recommended Course </NavLink>
-        <NavBtn> <NavBtnLink to='/SignIn'>Sign In</NavBtnLink> </NavBtn>
+          <AuthNav />
       </Nav>
     </>
   );

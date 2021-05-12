@@ -1,4 +1,4 @@
-ucsb/course/recommender/springboot/model/Course.class
 ucsb/course/recommender/springboot/SpringbootApplication.class
-ucsb/course/recommender/springboot/repository/CourseRepository.class
+ucsb/course/recommender/springboot/model/Course.class
 ucsb/course/recommender/springboot/controller/CourseController.class
+ucsb/course/recommender/springboot/repository/CourseRepository.class
