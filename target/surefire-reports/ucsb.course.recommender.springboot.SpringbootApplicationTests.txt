@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ucsb.course.recommender.springboot.SpringbootApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.806 s - in ucsb.course.recommender.springboot.SpringbootApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.984 s - in ucsb.course.recommender.springboot.SpringbootApplicationTests
