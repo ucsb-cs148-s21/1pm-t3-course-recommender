@@ -1,5 +1,6 @@
 import React from 'react';
 import AuthNav from './AuthNav';
+import { Navbar } from "react-bootstrap";
 import {
   Nav,
   NavLink,
