@@ -12,3 +12,6 @@
 | Thu 04/29 | Jack Zhu          | Finishing up our MVP and discussing future plans       |
 | Thu 05/06 | Jessica Zhang     | Led Second Retrospective                               |
 | Thu 05/06 | Jessica Zhang     | Led Third Sprint Planning                              |
+| Tue 05/11 | Ruxin Zhang       | Led lecture meeting and daily standup                  |
+| Thu 05/13 | Justin Surmani    | Led daily standup                                      |
+| Thu 05/13 | Chandler Ott      | Sprint 5 planning and lab05 and lab06 discussion       |
