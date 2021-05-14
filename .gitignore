@@ -24,6 +24,7 @@ hs_err_pid*
 
 # for the frontend
 frontend_new/node_modules
-
+**/node_modules
+target/node/node_modules
 
 node_modules
