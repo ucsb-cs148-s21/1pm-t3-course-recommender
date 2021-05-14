@@ -10,6 +10,9 @@ Team:  Jessica Zhang [], Chandler Ott [x], Jiarui Zhu [], Ruxin Zhang [x], Justi
 
 Scribed Discussion:
 
-* We need to add one "high-level" test to our application during section tonight!!
 
-* We must fix our error in our current main directory, specifically fixing our node_modules conflicts
+* We need to add one "high-level" test to our application before the end of the week.
+
+* Everyone in the group must have been assigned a task on the kanban board that was moved into the done column by this Friday 5/14.
+
+* Add more smaller issues (or breakup large issues into smaller issues) to the Kanban board so that everyone can complete an issue by Friday.
