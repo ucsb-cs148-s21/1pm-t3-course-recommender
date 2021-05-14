@@ -1,18 +1,15 @@
 # Project: UCSB Course Recommender
 
-Mentor: Shiran Wang
+Mentor: Sabrina Tsui
 
-Meeting Time: Lec12
+Meeting Time: Lec13
 
 Type of Meeting: Lecture Meeting and Daily Standup
 
-Team:  Jessica Zhang [x], Chandler Ott [x], Jiarui Zhu [x], Ruxin Zhang [x], Justin Surmani [x]
+Team:  Jessica Zhang [], Chandler Ott [x], Jiarui Zhu [], Ruxin Zhang [x], Justin Surmani [x]
 
 Scribed Discussion:
 
-* We need to add one "high-level" test to our application before the end of the week.
+* We need to add one "high-level" test to our application during section tonight!!
 
-* Everyone in the group must have been assigned a task on the kanban board that was moved into the done column by this Friday 5/14.
-
-* Add more smaller issues (or breakup large issues into smaller issues) to the Kanban board so that everyone can complete an issue by Friday.
-
+* We must fix our error in our current main directory, specifically fixing our node_modules conflicts
