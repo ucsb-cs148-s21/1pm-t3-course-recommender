@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 export const CourseForm = () => {
     let [selectedCourses, setSelectedCourses] = useState([]);
@@ -147,9 +149,11 @@ export const CourseForm = () => {
                         })
                     }
                 </form>
-                <div style={{ alignContent:'center'}}>
+                <br></br>
+                {/* <div style={{ alignContent:'center'}}>
                     <input type="submit" value="Submit" style={{ alignSelf:'center' }}></input>
-                </div>
+                </div> */}
+                <Button size="large" variant="contained" color="primary" href="Result">Submit</Button>{' '}
             </div>
         </div>
         </>
