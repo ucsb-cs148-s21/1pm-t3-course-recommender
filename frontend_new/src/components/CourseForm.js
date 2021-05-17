@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import henleyGate from '../img/henleyGate.jpg';
 
 export const CourseForm = () => {
     let [selectedCourses, setSelectedCourses] = useState([]);
@@ -127,28 +128,40 @@ export const CourseForm = () => {
 
     return (
         <>
-        <div className="container">
-            <div className="title-container" style={{ textAlign:'center', marginTop: 25 }}>
-                <h1>Course Survey</h1>
-                <h5>Enter the courses you have taken:</h5>
-            </div>
-            <div className="form-container" style={{ alignItems:'center', justifyContent:'center', display: 'flex', flexDirection: 'column' }}>
-                <form onSubmit={handleFormSubmit} style={{ textAlign:'center', columnCount:3}}>
-                    {
-                        courses.map((course, index) => {
-                            let { id, courseName, department, prerequisite } = course;
+        <div class="bg-image" style={{ 
+            backgroundImage: `url(${henleyGate})`,
+            width:'100%',
+            height:'650px',
+            backgroundSize: 'cover',
+            backgroundPosition:'center center',
+            backgroundRepeat: 'no-repeat',
+            textAlign:'center',
+            margin:'auto',
+            padding:'0',
+            }} >
+            <div className="container" style={{ backgroundColor:'rgba(255,255,255,0.4)', padding:'75px'}}>
+                <div className="title-container" style={{ textAlign:'center' }}>
+                    <h1>Course Survey</h1>
+                    <h5>Enter the courses you have taken:</h5>
+                </div>
+                <div className="form-container" style={{ alignItems:'center', justifyContent:'center', display: 'flex', flexDirection: 'column' }}>
+                    <form onSubmit={handleFormSubmit} style={{ textAlign:'center', columnCount:3 }}>
+                        {
+                            courses.map((course, index) => {
+                                let { id, courseName, department, prerequisite } = course;
 
-                            return (
-                                <div key={`course-${index}`} style={{ minWidth:200}}>
-                                    <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected} style= {{ marginRight:10 }}/>
-                                    <label htmlFor={courseName}>{courseName}</label> 
-                                </div>
-                            )
-                        })
-                    }
-                </form>
-                <div style={{ alignContent:'center'}}>
-                    <input type="submit" value="Submit" style={{ alignSelf:'center' }}></input>
+                                return (
+                                    <div key={`course-${index}`} style={{ minWidth:200 }}>
+                                        <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected} style= {{ justifyContent:'center', marginInline:5 }}/>
+                                        <label htmlFor={courseName}>{courseName}</label> 
+                                    </div>
+                                )
+                            })
+                        }
+                    </form>
+                    <div style={{ alignContent:'center' }}>
+                        <input type="submit" value="Submit" style={{ alignSelf:'center' }}></input>
+                    </div>
                 </div>
             </div>
         </div>
