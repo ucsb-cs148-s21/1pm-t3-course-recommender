@@ -53,3 +53,20 @@ export const NavBtnLink = styled(Link)`
     text-decoration:none;
   }
 `;
+
+export const BtnLink = styled(Link)`
+  border-radius: 5px;
+  background: #203354;
+  padding: 10px 20px;
+  color: #ffce34;
+  // cursor: pointer;
+  // transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  min-width: fit-content;
+  &:hover {
+    background: #fff;
+    color: #000;
+    text-decoration:none;
+  }
+`;
+
