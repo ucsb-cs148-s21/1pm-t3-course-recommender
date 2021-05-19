@@ -9,6 +9,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/Survey' component={CourseForm} />
         <Route path='/Input' component={CourseComponent} />
         <Route path='/Result' component={Result} />
+        <Route path='/Home' component={LandingPage} />
       </Switch>
     </Router>
   );
