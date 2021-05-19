@@ -1,5 +1,4 @@
 import React from 'react'
-import storke from '../img/storke.jpg'
 import storke2 from '../img/storke2.jpg'
 import { BtnLink } from './nav-bar/elements'
 
