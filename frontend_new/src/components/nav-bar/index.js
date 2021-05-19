@@ -6,12 +6,15 @@ import {
   NavBtn,
   NavBtnLink
 } from './elements';
+// import logo from '../../img/ucsb.svg';
+import logo from '../../img/ucsb-logo.svg';
+
 
 const NavBar = () => {
   return (
     <>
       <Nav>
-        <NavLink to='/Home' activeStyle> Home </NavLink>
+      <NavLink to='/'><img src = {logo} class="ucsb-img" /></NavLink>
         <NavLink to='/Survey'activeStyle> Survey </NavLink>
         <NavLink to='/Input' activeStyle> Course List </NavLink>
         <NavLink to='/Result' activeStyle> Recommended Courses </NavLink>
