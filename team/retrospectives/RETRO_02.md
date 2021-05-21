@@ -20,4 +20,4 @@
 * Maybe leading the team to retro some important event that had been through would be great. 
 
 ## Outcome
-* We are doing great on making a better frontend and we manage to do work more advanced and plan better for the upcoming activities. 
+* We reached our goal and we have a nicer frontend. We manage to do work more advanced and plan ahead for the upcoming activities. 
