@@ -18,3 +18,6 @@
 * I just go over the three points above and after the MVP, we already have a lot to retrospect on. 
 * It went pretty well. We come up with the goal and we agree on the change to make. 
 * Maybe leading the team to retro some important event that had been through would be great. 
+
+## Outcome
+* We are doing great on making a better frontend and we manage to do work more advanced and plan better for the upcoming activities. 
