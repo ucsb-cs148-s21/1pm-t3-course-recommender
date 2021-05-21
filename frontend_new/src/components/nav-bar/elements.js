@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 500px;
+  padding: 10px 100px;
   text-decoration: none;
 `;
 
@@ -70,3 +70,20 @@ export const BtnLink = styled(Link)`
   }
 `;
 
+
+export const SubmitBtn = styled.div`
+  border-radius: 5px;
+  background: #203354;
+  padding: 10px 20px;
+  color: #ffce34;
+  // cursor: pointer;
+  // transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  min-width: fit-content;
+  &:hover {
+    background: #fff;
+    color: #000;
+    text-decoration:none;
+  }
+`;
+// ?

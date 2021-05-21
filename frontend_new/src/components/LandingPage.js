@@ -5,8 +5,8 @@ import { BtnLink } from './nav-bar/elements'
 
 export default function LandingPage() {
     return (
-        <div style={{ display:'flex', flexDirection:'row', height:'640px' }}>
-            <div className="left-container" style={{ flex: 3, textAlign:'center', background:'#d8dded' }}>
+        <div style={{ display:'flex', flexDirection:'row', height:'640px', backgroundColor:'#d8dded' }}>
+            <div className="left-container" style={{ flex: 3, textAlign:'center'}}>
                 <h1 style={{ fontWeight:'bolder', marginBlock:'40px'}}>Welcome to the UCSB Course Recommender</h1>
                 <h4 style={{ color:'GrayText'}}>(For CS Students only currently)</h4>
                 <div className="btn-container" style={{ display:'flex', flexDirection:'row', justifyContent:'space-evenly', transform:'translateY(500%)'}}>
