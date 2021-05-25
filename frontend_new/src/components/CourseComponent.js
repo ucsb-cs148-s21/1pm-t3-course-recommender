@@ -11,9 +11,22 @@ class CourseComponent extends React.Component {
     }
 
     componentDidMount(){
-        CourseService.getCourses().then((response) => {
-            this.setState({ courses: response.data})
-        });
+        CourseService.getCourses()
+            .then(data => data.json())
+            .then((response) => {
+                const { classes } = response
+                this.setState({
+                    courses: classes.map(c => {
+                        const { courseId, title, deptCode } = c
+                        return {
+                            courseId,
+                            title,
+                            deptCode
+                        }
+                    })
+                })
+                // this.setState({ courses: response.data})
+            });
     }
 
     render (){
@@ -32,15 +45,17 @@ class CourseComponent extends React.Component {
                     </thead>
                     <tbody>
                         {
-                            this.state.courses.map(
-                                course => 
-                                <tr key = {course.id}>
-                                     <td> {course.id}</td>   
-                                     <td> {course.courseName}</td>   
-                                     <td> {course.department}</td>   
-                                     <td> {course.prerequisite}</td>   
-                                </tr>
-                            )
+                            this.state.courses.length > 0 && this.state.courses.map(course => {
+                                const { courseId, title, deptCode } = course
+                                return (
+                                    <tr key = {`${courseId}`}>
+                                        <td> {courseId}</td>   
+                                        <td> {title}</td>   
+                                        <td> {deptCode}</td>   
+                                        <td> '-'</td>   
+                                    </tr>
+                                )
+                            })
                         }
                     </tbody>
                 </table>

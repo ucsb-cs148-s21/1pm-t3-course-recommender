@@ -158,10 +158,10 @@ export const CourseForm = () => {
                                 )
                             })
                         }
+                        <div style={{ alignContent:'center' }}>
+                            <input type="submit" value="Submit" style={{ alignSelf:'center' }}></input>
+                        </div>
                     </form>
-                    <div style={{ alignContent:'center' }}>
-                        <input type="submit" value="Submit" style={{ alignSelf:'center' }}></input>
-                    </div>
                 </div>
             </div>
         </div>
