@@ -27,10 +27,9 @@ Tech Stack: React + Springboot, deployed on Heroku
 
 https://ucsb-course-recommender.herokuapp.com/
 
-https://github.com/ucsb-cs148-s21/1pm-t3-course-recommender/blob/main/docs/DEPLOY.md
 ## Installation
 see in ./docs/DEPLOY.md
-
+https://github.com/ucsb-cs148-s21/1pm-t3-course-recommender/blob/main/docs/DEPLOY.md
 
 ## MVP Version
 ### MVP Functionality
