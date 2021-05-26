@@ -30,8 +30,6 @@ https://ucsb-course-recommender.herokuapp.com/
 
 ## Installation
 
-
-
 ### Prerequisites
 1. Java 11 or above
   - type in```java -version```to check 
@@ -71,6 +69,8 @@ mvn spring-boot:run
 cd frontend_new
 npm start
 ```
+
+
 ## MVP Version
 ### MVP Functionality
 - The first page holds a list of courses offered by computer science department regularly
@@ -82,12 +82,14 @@ npm start
 * Current Algorithm still need some improvement to achieve a better performance on giving out plans based on the personal information
 * A more established database will be updated soon! 
 
+
 ## Final Version
 
 ### Final Functionality
 - 
 ### Final Known Problems
 -
+
 
 ## Contributing!
 We are happy to embrace any contributions~ 
