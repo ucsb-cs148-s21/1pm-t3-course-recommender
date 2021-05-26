@@ -55,15 +55,20 @@ https://ucsb-course-recommender.herokuapp.com/
 
 * TODO: Generate Auth Keys
 
-* Run the backend API first in root directory
+* Add these credentials to the .env.local file: 
+```
+REACT_APP_AUTH0_DOMAIN=cs148-s21-1pm-t3-course-recommender.us.auth0.com
+REACT_APP_AUTH0_AUDIENCE=https://ucsb-course-recommender.herokuapp.com
+REACT_APP_AUTH0_CLIENT_ID=CUI6kqw7jetBHG4coCzzt7KITafcgi0Y
+```
 
+* Run the backend API first in root directory
 ```
 mvn clean install
 mvn spring-boot:run
 ```
 
 * Then run the frontend cient (on another terminal window)
-
 ```
 cd frontend_new
 npm start
