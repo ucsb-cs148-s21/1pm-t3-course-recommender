@@ -69,7 +69,6 @@ cd frontend_new
 npm start
 ```
 
-<br>
 ## MVP Version
 ### MVP Functionality
 - The first page holds a list of courses offered by computer science department regularly
