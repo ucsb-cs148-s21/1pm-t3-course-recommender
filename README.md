@@ -28,11 +28,11 @@ Tech Stack: React + Springboot, deployed on Heroku
 https://ucsb-course-recommender.herokuapp.com/
 
 
-# Installation
+## Installation
 
 
 
-## Prerequisites
+### Prerequisites
 1. Java 11 or above
   - type in```java -version```to check 
   - if it's 11 or 14 change the version of java in pom.xml
@@ -42,7 +42,7 @@ https://ucsb-course-recommender.herokuapp.com/
 3. Node.js 
   - install by type in `npm install` in the terminal
 
-## Dependencies
+### Dependencies
 1. react modules
   - @jest
   - @babel
@@ -54,7 +54,7 @@ https://ucsb-course-recommender.herokuapp.com/
   - more things coming up in `1pm-t3-course-recommender/springboot_new/src/main/resources/`
 
 
-## Installation Steps - How to run it on localhost
+### Installation Steps - How to run it on localhost
 
 * TODO: Generate Auth Keys
 
@@ -71,22 +71,25 @@ mvn spring-boot:run
 cd frontend_new
 npm start
 ```
-## MVP Functionality
+## MVP Version
+### MVP Functionality
 - The first page holds a list of courses offered by computer science department regularly
 - The second page is a quiz for the user to check off the courses they have already taken to give out an personal schedule planning suggestion
 - The personal schedule planning suggestion will be showed up on the third page
 
-# MVP Known Problems
+### MVP Known Problems
 * Ensure Java version on local machine is compatible. If you get a build failure when running springboot-backend, check the `pom.xml` file and look for java properties tag. There, you can check if your installed version of java is compatible, or else you can change it down to 11 or 14 if required.
 * Current Algorithm still need some improvement to achieve a better performance on giving out plans based on the personal information
 * A more established database will be updated soon! 
 
-## Final Functionality
+## Final Version
+
+### Final Functionality
 - 
-## Final Known Problems
+### Final Known Problems
 -
 
-# Contributing!
+## Contributing!
 We are happy to embrace any contributions~ 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -94,5 +97,5 @@ We are happy to embrace any contributions~
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-# License
+## License
 We ingerate the MIT license, can be checked out in a file called: `License.txt`
