@@ -67,16 +67,8 @@ REACT_APP_AUTH0_AUDIENCE=https://ucsb-course-recommender.herokuapp.com
 REACT_APP_AUTH0_CLIENT_ID=CUI6kqw7jetBHG4coCzzt7KITafcgi0Y
 ```
 
-* Run the backend API first in root directory
+* Then run the frontend cient
 ```
-cd ..
-mvn clean install
-mvn spring-boot:run
-```
-
-* Then run the frontend cient (on another terminal window)
-```
-cd frontend_new
 npm install
 npm start
 ```
