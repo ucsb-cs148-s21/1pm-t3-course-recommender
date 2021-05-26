@@ -29,7 +29,6 @@ https://ucsb-course-recommender.herokuapp.com/
 
 
 ## Installation
-
 ### Prerequisites
 1. Java 11 or above
   - type in```java -version```to check 
@@ -70,7 +69,7 @@ cd frontend_new
 npm start
 ```
 
-
+<br>
 ## MVP Version
 ### MVP Functionality
 - The first page holds a list of courses offered by computer science department regularly
