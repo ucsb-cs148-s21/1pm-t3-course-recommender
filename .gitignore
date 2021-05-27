@@ -26,7 +26,6 @@ hs_err_pid*
 frontend_new/node_modules
 **/node_modules
 target/node/node_modules
-frontend_new/.env.local
 target/**
 
 node_modules
