@@ -23,8 +23,9 @@
 
 ## Installation Steps - How to run it on localhost
 
+```
 cd frontend_new
-
+```
 * Then run the frontend cient
 ```
 npm install
