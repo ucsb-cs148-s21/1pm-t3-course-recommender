@@ -13,11 +13,11 @@ import logo from '../../img/ucsb-logo.svg';
 const NavBar = () => {
   return (
     <>
-      <Nav>
-      <NavLink to='/'><img src = {logo} class="ucsb-img" /></NavLink>
+      <Nav className="navbar" style={{ display:'inline-flex', flexDirection:'row',justifyContent:'space-evenly', width:'100%', minWidth:'1030px' }}>
+        <NavLink to='/'><img src = {logo} class="ucsb-img" style={{ backgroundColor: '#18335d'}} /></NavLink>
         <NavLink to='/' activeStyle>Home</NavLink>
         <NavLink to='/Survey'activeStyle> Survey </NavLink>
-        <NavLink to='/Input' activeStyle> Course List </NavLink>
+        <NavLink to='/CourseList' activeStyle> Course List </NavLink>
         <NavLink to='/Result' activeStyle> Recommended Courses </NavLink>
         <AuthNav />
       </Nav>

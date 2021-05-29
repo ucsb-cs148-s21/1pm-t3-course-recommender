@@ -122,14 +122,14 @@ export const Result = () => {
 
     return (
         <div>
-            <h1 className = "text-center"> Here's a list of course you can take</h1>
+            <h1 className = "text-center" style={{ padding:'1em' }}>Here is a list of courses you can take</h1>
             <table className = "table table-striped">
                 <thead>
                     <tr>
-                        <td> Course Id</td>
-                        <td> CourseName</td>
-                        <td> Department</td>
-                        <td> Prerequisite</td>
+                        <td>Course Id</td>
+                        <td>Course Name</td>
+                        <td>Department</td>
+                        <td>Prerequisite(s)</td>
                     </tr>
 
                 </thead>
