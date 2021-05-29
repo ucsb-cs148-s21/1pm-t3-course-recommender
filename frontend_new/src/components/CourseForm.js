@@ -163,7 +163,11 @@ export const CourseForm = () => {
                         <input type="submit" value="Submit" style={{ borderRadius: '5px',
                                                                     cursor: 'pointer',
                                                                     textDecoration: 'none',
-                                                                    minWidth: 'fit-content'
+                                                                    minWidth: 'fit-content',
+                                                                    padding: '5px 15px', 
+                                                                    background:'#ffffff',
+                                                                    border:'0 none',
+                                                                    WebkitBorderRadius:' 5px'
                                                                     }}>
                                                                 
                         </input>
