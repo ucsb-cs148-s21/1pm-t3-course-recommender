@@ -23,18 +23,9 @@
 
 ## Installation Steps - How to run it on localhost
 
-* Create a file called .env.local in `frontend_new`
-``` 
-cd frontend_new 
-vim .env.local
 ```
-* Add these credentials to this file: 
+cd frontend_new
 ```
-REACT_APP_AUTH0_DOMAIN=
-REACT_APP_AUTH0_AUDIENCE=
-REACT_APP_AUTH0_CLIENT_ID=
-```
-
 * Then run the frontend cient
 ```
 npm install

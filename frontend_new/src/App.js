@@ -20,10 +20,9 @@ function App() {
       <Switch>
         <Route path='/' exact component={LandingPage} />
         <Route path='/Survey' component={CourseForm} />
-        <Route path='/Input' component={CourseComponent} />
+        <Route path='/CourseList' component={CourseComponent} />
         <Route path='/Result' component={Result} />
         <PrivateRoute path="/Profile" component={Profile} />
-        {/* <Route path='/Home' component={LandingPage} /> */}
       </Switch>
     </Router>
   );

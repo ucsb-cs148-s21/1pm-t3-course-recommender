@@ -9,7 +9,7 @@ const AuthNav = () => {
   if(user) {
     const { name } = user;
     return <>
-      <NavLink to='/Profile'> Hello, {name}!</NavLink>
+      <NavLink to='/Profile' style={{ textDecoration:'none'}} > Hello, {name}!</NavLink>
       <LogoutButton />
     </>
   } else {
