@@ -165,7 +165,8 @@ export const CourseForm = () => {
                                                                     textDecoration: 'none',
                                                                     minWidth: 'fit-content',
                                                                     padding: '5px 15px', 
-                                                                    background:'#ffffff',
+                                                                    background:'#18335d',
+                                                                    color: 'gold',
                                                                     border:'0 none',
                                                                     WebkitBorderRadius:' 5px'
                                                                     }}>

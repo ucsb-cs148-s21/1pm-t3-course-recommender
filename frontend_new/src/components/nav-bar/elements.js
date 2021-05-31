@@ -8,7 +8,6 @@ export const Nav = styled.nav`
   flex-direction: row
   justify-content: space-evenly;
   min-width: 1100px
-  text-decoration: none;
 `;
 
 export const NavLink = styled(Link)`
