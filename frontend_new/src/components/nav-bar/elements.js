@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   background: #18335d;
-  height: 80px;
+  height: 5em;
   display: flex;
-  justify-content: space-between;
-  padding: 10px 100px;
-  text-decoration: none;
+  flex-direction: row
+  justify-content: space-evenly;
+  min-width: 1100px
 `;
 
 export const NavLink = styled(Link)`
@@ -59,6 +59,7 @@ export const BtnLink = styled(Link)`
   background: #203354;
   padding: 10px 20px;
   color: #ffce34;
+  font-weight: bold;
   // cursor: pointer;
   // transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -74,16 +75,10 @@ export const BtnLink = styled(Link)`
 export const SubmitBtn = styled.div`
   border-radius: 5px;
   background: #203354;
-  padding: 10px 20px;
   color: #ffce34;
-  // cursor: pointer;
-  // transition: all 0.2s ease-in-out;
+  cursor: pointer;
   text-decoration: none;
   min-width: fit-content;
-  &:hover {
-    background: #fff;
-    color: #000;
-    text-decoration:none;
-  }
+  max-width: 125px;
+  justify-content: center;
 `;
-// ?

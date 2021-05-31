@@ -18,9 +18,8 @@ function App() {
       <Switch>
         <Route path='/' exact component={LandingPage} />
         <Route path='/Survey' component={CourseForm} />
-        <Route path='/Input' component={CourseComponent} />
+        <Route path='/CourseList' component={CourseComponent} />
         <Route path='/Result' component={Result} />
-        {/* <Route path='/Home' component={LandingPage} /> */}
       </Switch>
     </Router>
   );

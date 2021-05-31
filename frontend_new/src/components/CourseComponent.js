@@ -32,14 +32,14 @@ class CourseComponent extends React.Component {
     render (){
         return (
             <div>
-                <h1 className = "text-center"> Courses List</h1>
+                <h1 className = "text-center" style={{ padding:'.5em'}}> Course List </h1>
                 <table className = "table table-striped">
                     <thead>
                         <tr>
                             <td> Course Id</td>
-                            <td> Course courseName</td>
-                            <td> Course department</td>
-                            <td> Course prerequisite</td>
+                            <td> Course Name</td>
+                            <td> Department</td>
+                            <td> Prerequisite(s)</td>
                         </tr>
 
                     </thead>

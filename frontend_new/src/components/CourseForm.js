@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import henleyGate from '../img/henleyGate.jpg';
+import { SubmitBtn } from './nav-bar/elements'
 
 export const CourseForm = () => {
     let [selectedCourses, setSelectedCourses] = useState([]);
@@ -131,17 +132,18 @@ export const CourseForm = () => {
         <div class="bg-image" style={{ 
             backgroundImage: `url(${henleyGate})`,
             width:'100%',
-            height:'650px',
+            height:'641px',
             backgroundSize: 'cover',
             backgroundPosition:'center center',
             backgroundRepeat: 'no-repeat',
             textAlign:'center',
             margin:'auto',
             padding:'0',
+            minWidth:'950px'
             }} >
-            <div className="container" style={{ backgroundColor:'rgba(255,255,255,0.4)', padding:'75px'}}>
-                <div className="title-container" style={{ textAlign:'center' }}>
-                    <h1>Course Survey</h1>
+            <div className="container" style={{ backgroundColor:'rgba(255,255,255,0.4)', padding:'4em'}}>
+                <div className="title-container" style={{ textAlign:'center', padding:'1em' }}>
+                    <h1 style={{ fontSize:'3.2em'}}>Course Survey</h1>
                     <h5>Enter the courses you have taken:</h5>
                 </div>
                 <div className="form-container" style={{ alignItems:'center', justifyContent:'center', display: 'flex', flexDirection: 'column' }}>
@@ -151,16 +153,25 @@ export const CourseForm = () => {
                                 let { id, courseName, department, prerequisite } = course;
 
                                 return (
-                                    <div key={`course-${index}`} style={{ minWidth:200 }}>
+                                    <div key={`course-${index}`} style={{ minWidth:'175px' }}>
                                         <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected} style= {{ justifyContent:'center', marginInline:5 }}/>
                                         <label htmlFor={courseName}>{courseName}</label> 
                                     </div>
                                 )
                             })
                         }
-                        <div style={{ alignContent:'center' }}>
-                            <input type="submit" value="Submit" style={{ alignSelf:'center' }}></input>
-                        </div>
+                        <input type="submit" value="Submit" style={{ borderRadius: '5px',
+                                                                    cursor: 'pointer',
+                                                                    textDecoration: 'none',
+                                                                    minWidth: 'fit-content',
+                                                                    padding: '5px 15px', 
+                                                                    background:'#18335d',
+                                                                    color: 'gold',
+                                                                    border:'0 none',
+                                                                    WebkitBorderRadius:' 5px'
+                                                                    }}>
+                                                                
+                        </input>
                     </form>
                 </div>
             </div>
