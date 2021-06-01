@@ -1,7 +1,14 @@
 import React from 'react';
 import CourseService from '../services/CourseService';
+import { Preqreqs } from './Preqreqs';
+import prerequisite from './prerequsite';
 
 class CourseComponent extends React.Component {
+    getPrereqs(courseID) {
+        const prereqVal = prerequisite[courseID]
+        // debugger
+        return (courseID && prereqVal) ? prereqVal : ["-"]
+    }
 
     constructor(props){
         super(props)
@@ -16,12 +23,15 @@ class CourseComponent extends React.Component {
             .then((response) => {
                 const { classes } = response
                 this.setState({
-                    courses: classes.map(c => {
-                        const { courseId, title, deptCode } = c
+                    courses: classes.map(course => {
+                        let { courseId, title, deptCode } = course
+                        courseId = courseId.trim()
+                        // debugger
                         return {
-                            courseId,
+                            courseId: courseId,
                             title,
-                            deptCode
+                            deptCode,
+                            prereqs: this.getPrereqs(courseId)
                         }
                     })
                 })
@@ -46,13 +56,15 @@ class CourseComponent extends React.Component {
                     <tbody>
                         {
                             this.state.courses.length > 0 && this.state.courses.map(course => {
-                                const { courseId, title, deptCode } = course
+                                const { courseId, title, deptCode, prereqs } = course
                                 return (
                                     <tr key = {`${courseId}`}>
                                         <td> {courseId}</td>   
                                         <td> {title}</td>   
                                         <td> {deptCode}</td>   
-                                        <td> '-'</td>   
+                                        <td>
+                                            <Preqreqs prereqs={prereqs}/>
+                                        </td>   
                                     </tr>
                                 )
                             })

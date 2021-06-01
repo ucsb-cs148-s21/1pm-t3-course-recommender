@@ -10,3 +10,8 @@
 .LandingPage {
   background-color: #d8dded;
 }
+
+.list {
+  list-style-type: none;
+  margin-bottom: 0px !important;
+}
