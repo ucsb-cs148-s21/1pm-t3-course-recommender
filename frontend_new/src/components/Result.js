@@ -1,123 +1,81 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import CourseService from '../services/CourseService';
+import { Preqreqs } from './Preqreqs';
+import prerequisite from './prerequsite';
 
 function checkPrerequisite(prerequisite, selectedCourses) {
-    return selectedCourses.includes(prerequisite);
+    // debugger;
+    if (prerequisite.length == 0) return true;
+    // return selectedCourses.includes(prerequisite);
+    for (let i = 0; i < prerequisite.length; ++i) {
+        if (!selectedCourses.includes(prerequisite[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function getPrereqs(courseID) {
+    const prereqVal = prerequisite[courseID]
+    // debugger
+    return (courseID && prereqVal) ? prereqVal : ["-"]
 }
 
 export const Result = () => {
 
-    const courses = [
-        {
-            id: 1,
-            courseName: "CMPSC 8",
-            department: "CMPSC",
-            prerequisite: "",
-        },
-        {
-            id: 2,
-            courseName: "CMPSC 16",
-            department: "CMPSC",
-            prerequisite: "CMPSC 8",
-        },
-        {
-            id: 3,
-            courseName: "CMPSC 24",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
-        },
-        {
-            id: 4,
-            courseName: "CMPSC 32",
-            department: "CMPSC",
-            prerequisite: "CMPSC 24",
-        },
-        {
-            id: 5,
-            courseName: "CMPSC 40",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
-        },
-        {
-            id: 6,
-            courseName: "CMPSC 48",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
-        },
-        {
-            id: 7,
-            courseName: "CMPSC 64",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
-        },
-        {
-            id: 8,
-            courseName: "CMPSC 111",
-            department: "CMPSC",
-            prerequisite: "CMPSC 24",
-        },
-        {
-            id: 9,
-            courseName: "CMPSC 130A",
-            department: "CMPSC",
-            prerequisite: "CMPSC 40",
-        },
-        {
-            id: 10,
-            courseName: "CMPSC 130B",
-            department: "CMPSC",
-            prerequisite: "CMPSC 130A",
-        },
-        {
-            id: 11,
-            courseName: "CMPSC 138",
-            department: "CMPSC",
-            prerequisite: "CMPSC 40",
-        },
-        {
-            id: 12,
-            courseName: "CMPSC 154",
-            department: "CMPSC",
-            prerequisite: "CMPSC 64",
-        },
-        {
-            id: 13,
-            courseName: "CMPSC 160",
-            department: "CMPSC",
-            prerequisite: "CMPSC 138",
-        },
-        {
-            id: 14,
-            courseName: "CMPSC 162",
-            department: "CMPSC",
-            prerequisite: "CMPSC 138",
-        },
-        {
-            id: 15,
-            courseName: "CMPSC 170",
-            department: "CMPSC",
-            prerequisite: "CMPSC 154",
+    const [offeredCourses, setOfferedCourses] = useState([]);
+
+    // Fetch the data once the component loads
+    useEffect(() => {
+        CourseService.getCourses()
+        .then(data => data.json())
+        .then((response) => {
+            const { classes } = response
+
+            const fetchedCourses = classes.map(course => {
+                let { courseId, title, deptCode } = course
+                courseId = courseId.trim()
+
+                return {
+                    id: courseId.split(' ').filter(token => token).join(' '),
+                    courseName: courseId.split(' ').filter(token => token).join(' '),
+                    department: deptCode,
+                    prerequisite: getPrereqs(courseId)
+                }
+            })
+
+            // Shallow copy so React can detect an update to the array of courses:
+            setOfferedCourses(JSON.parse(JSON.stringify(fetchedCourses)))
+        });
+    }, [])
+
+    const getResultCourses = () => {
+        let rv = [];
+        if (offeredCourses.length > 0) {
+            // debugger;
+            for (let i = 0; i < offeredCourses.length; ++i) {
+                let exist = false;
+                for (let j = 0; j < selectedCourses.length; ++j) {
+                    if (offeredCourses[i].courseName == selectedCourses[j]) {
+                        exist = true;
+                        break;
+                    }
+                }
+                if (!exist) {
+                    if (checkPrerequisite(offeredCourses[i].prerequisite, selectedCourses)) {
+                        rv.push(offeredCourses[i]);
+                    }
+                }
+            }
         }
-        // TODO: add more courses to this list to make the survery comprehensive
-    ]
+        return rv;
+    }
 
     const selectedCourses = JSON.parse(localStorage.getItem('selectedCourses'));
 
-    let resultCourses = [];
-    for (let i = 0; i < courses.length; ++i) {
-        let exist = false;
-        for (let j = 0; j < selectedCourses.length; ++j) {
-            if (courses[i].courseName == selectedCourses[j]) {
-                exist = true;
-                break;
-            }
-        }
-        if (!exist) {
-            if (checkPrerequisite(courses[i].prerequisite, selectedCourses)) {
-                resultCourses.push(courses[i]);
-            }
-        }
-    }
-    // console.log(JSON.stringify(resultCourses));
+    let resultCourses = getResultCourses();
+    
+    console.log(JSON.stringify(resultCourses));
     // debugger;
 
     return (
@@ -141,7 +99,10 @@ export const Result = () => {
                                  <td> {course.id}</td>   
                                  <td> {course.courseName}</td>   
                                  <td> {course.department}</td>   
-                                 <td> {course.prerequisite}</td>   
+                                 {/* <td> {course.prerequisite}</td>    */}
+                                 <td>
+                                    <Preqreqs prereqs={course.prerequisite}/>
+                                 </td>  
                             </tr>
                         )
                     }

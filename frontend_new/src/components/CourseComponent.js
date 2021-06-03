@@ -28,7 +28,7 @@ class CourseComponent extends React.Component {
                         courseId = courseId.trim()
                         // debugger
                         return {
-                            courseId: courseId,
+                            courseId,
                             title,
                             deptCode,
                             prereqs: this.getPrereqs(courseId)

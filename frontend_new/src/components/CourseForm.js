@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import henleyGate from '../img/henleyGate.jpg';
 import { SubmitBtn } from './nav-bar/elements'
@@ -12,94 +12,118 @@ export const CourseForm = () => {
         {
             id: 1,
             courseName: "CMPSC 8",
-            department: "CMPSC",
-            prerequisite: "",
+            // department: "CMPSC",
+            // prerequisite: "",
         },
         {
             id: 2,
             courseName: "CMPSC 16",
-            department: "CMPSC",
-            prerequisite: "CMPSC 8",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 8",
         },
         {
             id: 3,
             courseName: "CMPSC 24",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 16",
         },
         {
             id: 4,
             courseName: "CMPSC 32",
-            department: "CMPSC",
-            prerequisite: "CMPSC 24",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 24",
         },
         {
             id: 5,
             courseName: "CMPSC 40",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 16",
         },
         {
             id: 6,
             courseName: "CMPSC 48",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 16",
         },
         {
             id: 7,
             courseName: "CMPSC 64",
-            department: "CMPSC",
-            prerequisite: "CMPSC 16",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 16",
         },
         {
             id: 8,
             courseName: "CMPSC 111",
-            department: "CMPSC",
-            prerequisite: "CMPSC 24",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 24",
         },
         {
             id: 9,
             courseName: "CMPSC 130A",
-            department: "CMPSC",
-            prerequisite: "CMPSC 40",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 40",
         },
         {
             id: 10,
             courseName: "CMPSC 130B",
-            department: "CMPSC",
-            prerequisite: "CMPSC 130A",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 130A",
         },
         {
             id: 11,
             courseName: "CMPSC 138",
-            department: "CMPSC",
-            prerequisite: "CMPSC 40",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 40",
         },
         {
             id: 12,
             courseName: "CMPSC 154",
-            department: "CMPSC",
-            prerequisite: "CMPSC 64",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 64",
         },
         {
             id: 13,
             courseName: "CMPSC 160",
-            department: "CMPSC",
-            prerequisite: "CMPSC 138",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 138",
         },
         {
             id: 14,
             courseName: "CMPSC 162",
-            department: "CMPSC",
-            prerequisite: "CMPSC 138",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 138",
         },
         {
             id: 15,
             courseName: "CMPSC 170",
-            department: "CMPSC",
-            prerequisite: "CMPSC 154",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 154",
+        },
+        {
+            id: 16,
+            courseName: "MATH 4A",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 154",
+        },
+        {
+            id: 17,
+            courseName: "MATH 4B",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 154",
+        },
+        {
+            id: 18,
+            courseName: "MATH 6A",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 154",
+        },
+        {
+            id: 19,
+            courseName: "PSTAT 120A",
+            // department: "CMPSC",
+            // prerequisite: "CMPSC 154",
         }
-        // TODO: add more courses to this list to make the survery comprehensive
+        
     ]
 
     const courseSelected = event => {
@@ -144,7 +168,7 @@ export const CourseForm = () => {
             <div className="container" style={{ backgroundColor:'rgba(255,255,255,0.4)', padding:'4em'}}>
                 <div className="title-container" style={{ textAlign:'center', padding:'1em' }}>
                     <h1 style={{ fontSize:'3.2em'}}>Course Survey</h1>
-                    <h5>Enter the courses you have taken:</h5>
+                    <h5>Enter the courses or equivalence you have taken:</h5>
                 </div>
                 <div className="form-container" style={{ alignItems:'center', justifyContent:'center', display: 'flex', flexDirection: 'column' }}>
                     <form onSubmit={handleFormSubmit} style={{ textAlign:'center', columnCount:3 }}>
