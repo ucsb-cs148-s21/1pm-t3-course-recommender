@@ -169,6 +169,21 @@ export const CourseForm = () => {
         history.push('/Result');   
     }
 
+    const submitButtonStyle = {
+        position: 'absolute',
+        top: '60%',
+        left: '73%',
+        borderRadius: '5px',
+        cursor: 'pointer',
+        textDecoration: 'none',
+        minWidth: 'fit-content',
+        padding: '5px 15px', 
+        background:'#18335d',
+        color: 'gold',
+        border:'0 none',
+        WebkitBorderRadius:'5px'
+}
+
     return (
         <>
         <div class="bg-image" style={{ 
@@ -183,37 +198,28 @@ export const CourseForm = () => {
             padding:'0',
             minWidth:'950px'
             }} >
-            <div className="container" style={{ backgroundColor:'rgba(255,255,255,0.4)', padding:'4em'}}>
+            <div className="container" style={{ backgroundColor:'rgba(255,255,255,0.5)', padding:'2em 4em 4em 4em'}}>
                 <div className="title-container" style={{ textAlign:'center', padding:'1em' }}>
                     <h1 style={{ fontSize:'3.2em'}}>Course Survey</h1>
-                    <h5>Enter the courses you have taken:</h5>
+                    <h5>Enter the courses or equivalent you have taken:</h5>
                 </div>
-                <div className="form-container" style={{ alignItems:'center', justifyContent:'center', display: 'flex', flexDirection: 'column' }}>
-                    <form onSubmit={handleFormSubmit} style={{ textAlign:'center', columnCount:3 }}>
+                <div className="form-container" style={{ alignItems:'center', justifyContent:'center', display: 'flex', flexDirection: 'column'}}>
+                    <form onSubmit={handleFormSubmit} style={{ textAlign:'center', columnCount:4 }}>
                         {
                             courses.map((course, index) => {
-                                let { id, courseName, department, prerequisite } = course;
+                                let { id, courseName } = course;
 
                                 return (
-                                    <div key={`course-${index}`} style={{ minWidth:'175px' }}>
+                                    <div key={`course-${index}`} style={{ minWidth:'100%', display:'inline-block', justifyContent:'space-evenly' }}>
                                         <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected} style= {{ justifyContent:'center', marginInline:5 }}/>
                                         <label htmlFor={courseName}>{courseName}</label> 
                                     </div>
                                 )
                             })
                         }
-                        <input type="submit" value="Submit" style={{ borderRadius: '5px',
-                                                                    cursor: 'pointer',
-                                                                    textDecoration: 'none',
-                                                                    minWidth: 'fit-content',
-                                                                    padding: '5px 15px', 
-                                                                    background:'#18335d',
-                                                                    color: 'gold',
-                                                                    border:'0 none',
-                                                                    WebkitBorderRadius:' 5px'
-                                                                    }}>
-                                                                
-                        </input>
+                        <div className="submit-btn">
+                            <input type="submit" value="Submit" style={submitButtonStyle}></input>
+                        </div>
                     </form>
                 </div>
             </div>
