@@ -24,9 +24,12 @@ const Profile = () => {
       </Row>
       <hr style={{ color: '#18335d', backgroundColor: '#18335d', height: '5px' }} />
       <Row className="text-left" style={{ display: 'inline-block', paddingLeft:'15px' }}>
-        <div className="profile-info-container">
-          <p>Full Name: {name}</p>
-          <p>Email: {email}</p>
+        <div className="info-container" style={{ marginTop:'2em' }}>
+          <h3>Contact Us!</h3>
+          <p>You can find the source code <a target='_blank' href={'https://github.com/ucsb-cs148-s21/1pm-t3-course-recommender'}>here</a>.</p>
+          <p>Feel free to email the developers at the address below:
+            <br/>ucsbCourseRecommender@gmail.com
+            </p>
         </div>
       </Row>
     </Container>
