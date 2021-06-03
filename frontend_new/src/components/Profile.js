@@ -8,7 +8,7 @@ const Profile = () => {
 
   return (
     <Container className="mb-5">
-      <Row className="align-items-center profile-header mb-5 text-center text-md-left">
+      <Row className="align-items-center profile-header mb-5 text-center text-md-left" style={{ paddingTop: '2em'}} >
         <Col md={2}>
           <img
             src={picture}
@@ -22,8 +22,12 @@ const Profile = () => {
           <Badge variant="warning">{"UCSB Affiliate"}</Badge>
         </Col>
       </Row>
-      <Row className="text-left">
-        <ReactJson src={user} />
+      <hr style={{ color: '#18335d', backgroundColor: '#18335d', height: '5px' }} />
+      <Row className="text-left" style={{ display: 'inline-block', paddingLeft:'15px' }}>
+        <div className="profile-info-container">
+          <p>Full Name: {name}</p>
+          <p>Email: {email}</p>
+        </div>
       </Row>
     </Container>
   );
