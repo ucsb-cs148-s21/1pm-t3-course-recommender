@@ -39,6 +39,7 @@ export const Result = () => {
                 return {
                     id: courseId.split(' ').filter(token => token).join(' '),
                     courseName: courseId.split(' ').filter(token => token).join(' '),
+                    courseTitle: title,
                     department: deptCode,
                     prerequisite: getPrereqs(courseId)
                 }
@@ -85,7 +86,8 @@ export const Result = () => {
                 <thead>
                     <tr>
                         <td>Course Id</td>
-                        <td>Course Name</td>
+                        {/* <td>Course Name</td> */}
+                        <td>Title</td>
                         <td>Department</td>
                         <td>Prerequisite(s)</td>
                     </tr>
@@ -97,7 +99,8 @@ export const Result = () => {
                             course => 
                             <tr key = {course.id}>
                                  <td> {course.id}</td>   
-                                 <td> {course.courseName}</td>   
+                                 {/* <td> {course.courseName}</td>    */}
+                                 <td> {course.courseTitle}</td>
                                  <td> {course.department}</td>   
                                  {/* <td> {course.prerequisite}</td>    */}
                                  <td>
