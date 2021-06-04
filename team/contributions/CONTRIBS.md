@@ -7,6 +7,11 @@
 ## Jessica Zhang
 
 ## Justin Surmani
+I have 75 commits. Some of these are actual updates to the codebase, while a lot
+of them are adding files to document our team meetings and such. I helped facilitate and
+implement our Auth0/google authentification system as well as the profile page that
+you can only see when you are logged in.
+
 
 ## Chandler Ott
 I have 33 commits. Some are small/quick fixes while others are more
