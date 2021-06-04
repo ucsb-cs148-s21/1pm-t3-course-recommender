@@ -1,7 +1,7 @@
 # 1pm-t3-course-recommender
 
 
-### Project name: **UCSB Course Recommender Application**
+## Project name: **UCSB Course Recommender Application**
 
 ### Description:
 A web application that helps CS students choose their course by listing a list of major courses and GE courses that they can take to count towards their graduation. 
@@ -24,6 +24,7 @@ Chandler Ott: chandlerott
 
 Tech Stack: React + Springboot, deployed on Heroku
 
+## Deployment
 
 https://ucsb-course-recommender.herokuapp.com/
 
