@@ -29,7 +29,12 @@ In order to make the API calls on localhost you must apply for a UCSB Developer 
 ```
 cd frontend_new
 ```
+
 * Create a file in the frontend_new directory named ".env.local"
+```
+vim .env.local
+```
+
 * Add the following lines to the file replacing "YOUR_UCSB_API_KEY_GOES_HERE" with the your actual UCSB API key.
 
 ```
