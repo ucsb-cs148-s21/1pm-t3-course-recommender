@@ -1,6 +1,12 @@
 # Contributions
 
 ## Jiarui Zhu
+I have 39 commits. I initially setup the springboot backend and react frontend fromework.
+I setup the framework for the Survey page, Course List page, and Result page.
+I setup the local storage that stores the input from user.
+I setup the API all in React that gets course information data from UCSB Developer API.
+I implemented algorithm that returns a list of courses that a user can take based on the course offering and user input
+
 
 ## Ruxin Zhang 
 
