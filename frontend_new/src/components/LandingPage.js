@@ -5,7 +5,7 @@ import { BtnLink } from './nav-bar/elements'
 
 export default function LandingPage() {
     return (
-        <div className="LandingPage" style={{ display:'flex', flexDirection:'row', height:'640px' }}>
+        <div className="LandingPage" style={{ display:'flex', flexDirection:'row', height:'650px' }}>
             <div className="left-container" style={{ flex: 3, flexDirection:'column', textAlign:'center' }}>
                 <div className="content" style={{ display:'grid', justifyContent:'center', height:'100%' }}>
                     <div className="headers">
