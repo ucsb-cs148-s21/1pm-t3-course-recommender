@@ -1,14 +1,14 @@
-## Contributions
+# Contributions
 
-# Jiarui Zhu
+## Jiarui Zhu
 
-# Ruxin Zhang 
+## Ruxin Zhang 
 
-# Jessica Zhang
+## Jessica Zhang
 
-# Justin Surmani
+## Justin Surmani
 
-# Chandler Ott
+## Chandler Ott
 I have 33 commits. Some are small/quick fixes while others are more
 feature heavy in terms of UX/UI and design. That is where I spent the
 vast majority of my time since I am more experienced in front end than
