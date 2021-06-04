@@ -196,6 +196,7 @@ export const CourseForm = () => {
         WebkitBorderRadius:'5px'
 }
     const formContainerStyle = {
+        textAlign: 'left',
         alignItems:'center',
         justifyContent:'center', 
         display: 'flex', 
@@ -216,14 +217,14 @@ export const CourseForm = () => {
                     <h5>Enter the courses or equivalent you have taken:</h5>
                 </div>
                 <div className="form-container" style={formContainerStyle}>
-                    <form onSubmit={handleFormSubmit} style={{ textAlign:'center', columnCount:4 }}>
+                    <form onSubmit={handleFormSubmit} style={{ columnCount:4 }}>
                         {
                             courses.map((course, index) => {
                                 let { id, courseName } = course;
 
                                 return (
                                     <div key={`course-${index}`} style={courseCheckboxStyle}>
-                                        <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected} style= {{ justifyContent:'center', marginInline:5 }}/>
+                                        <input type="checkbox" id={`course-id-${id}`} name={courseName} value={courseName} onChange={courseSelected} style= {{ justifyContent:'center', marginInline:'5px' }}/>
                                         <label htmlFor={courseName}>{courseName}</label> 
                                     </div>
                                 )
