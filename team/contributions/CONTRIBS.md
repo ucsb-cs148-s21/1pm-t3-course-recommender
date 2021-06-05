@@ -14,6 +14,7 @@ I implemented algorithm that returns a list of courses that a user can take base
 
 ## Jessica Zhang
 I have 60 commits. Most of them are doing documentation such as sprint meeting logs, deploy and other in and other documents. As the Design Document Coordinator, I collect the information for most part of the document and coordinate on the chunk that I am not that familiar with and gain specific help from specific person who know about them. 
+
 For the code part, I basically help both front-end and back-end team on wherever they need a hand. I mostly help on the API part as the backend data support and I help on the front-end submit button with the form input on the survey page. As github has been being really tricky to me, I basically sent my code to my teammate and ask them to help me upload the changes or I did pair programming with my teammates. 
 
 
