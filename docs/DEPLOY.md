@@ -27,7 +27,8 @@ In order to make the API calls on localhost you must apply for a UCSB Developer 
 ## Installation Steps - How to run it on localhost
 
 ```
-cd frontend_new
+git clone git@github.com:ucsb-cs148-s21/1pm-t3-course-recommender.git
+cd 1pm-t3-course-recommender/frontend_new
 ```
 
 * Create a file in the frontend_new directory named ".env.local"
