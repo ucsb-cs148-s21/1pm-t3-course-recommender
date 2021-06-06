@@ -25,9 +25,16 @@ In order to make the API calls on localhost you must apply for a UCSB Developer 
 
 
 ## Installation Steps - How to run it on localhost
-
+* first clone the repo from github: 
 ```
 git clone git@github.com:ucsb-cs148-s21/1pm-t3-course-recommender.git
+```
+or 
+```
+git clone https://github.com/ucsb-cs148-s21/1pm-t3-course-recommender.git
+```
+* then go to the frontend repository:
+```
 cd 1pm-t3-course-recommender/frontend_new
 ```
 
