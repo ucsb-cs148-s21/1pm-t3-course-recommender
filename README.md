@@ -66,4 +66,4 @@ We are happy to embrace any contributions~
 5. Submit a pull request :D
 
 ## License
-We ingerate the MIT license, can be checked out in a file called: `License.txt`
+We integrated the MIT license, which can be checked out in a file called: `License.txt`
