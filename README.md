@@ -48,9 +48,13 @@ https://github.com/ucsb-cs148-s21/1pm-t3-course-recommender/blob/main/docs/DEPLO
 ## Final Version
 
 ### Final Functionality
-- 
+- The initial landing page contains a description of the application and a link to view courses offered next quarter or take the course survey
+- The course list page shows a list of all computer science courses offered next quarter taken directly from the UCSB Developer API
+- The course survey page has a check list of all important prerequisite courses for the CS major, upon completion you will be redirected to the recommended courses page
+- The recommended courses page offers a list of courses you are eligible to take based on the information you provided in the course survey
+- The profile page is available after logging in to the application with your @ucsb.edu email
 ### Final Known Problems
--
+* Current survey algorithm could be improved to fix the problem of equivalent prerequisites not shown in the course survey
 
 
 ## Contributing!
