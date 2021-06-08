@@ -65,5 +65,16 @@ We are happy to embrace any contributions~
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+## Materials for Final version 2.0 release
+
+# Design Document
+https://docs.google.com/document/d/1zcPZ-XNMXE1buxg1-PtYqenhxwRqQR91ucPJp0PrHEs/edit?usp=sharing
+
+# User Manual
+https://docs.google.com/document/d/1DYoyfdU3NEk_y0oyIznjWPXkmXzYKl6xjlp__9z-V4k/edit?usp=sharing
+
+# Final Presentation link (also found in teams/FINAL_PRESENTATION.md)
+https://youtu.be/kpc7oCals_k
+
 ## License
 We integrated the MIT license, which can be checked out in a file called: `License.txt`
