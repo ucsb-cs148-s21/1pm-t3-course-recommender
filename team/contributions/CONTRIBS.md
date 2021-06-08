@@ -10,7 +10,7 @@ I implemented algorithm that returns a list of courses that a user can take base
 
 ## Ruxin Zhang 
 I have 9 commits.
-As a team member who mainly worked on UI/UX design, I did the very first version of the navigation bar and did most of the current navigation bar. I fixed some small errors as well, such as the submit button didn’t redirect to the Recommended Course page and some padding spaces of the elements.
+As a team member who mainly worked on UI/UX design, I did the very first version of the navigation bar and did most of the current navigation bar. I fixed some small errors as well, such as the submit button didn’t redirect to the Recommended Course page, or made the page looks more user friendely, such as changing some padding spaces of the elements.
 
 
 ## Jessica Zhang
