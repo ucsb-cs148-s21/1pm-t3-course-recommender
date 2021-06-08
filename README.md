@@ -67,13 +67,13 @@ We are happy to embrace any contributions~
 
 ## Materials for Final version 2.0 release
 
-### Design Document (also found in `docs/DESIGN.md`)
+### Design Document
 https://docs.google.com/document/d/1zcPZ-XNMXE1buxg1-PtYqenhxwRqQR91ucPJp0PrHEs/edit?usp=sharing
 
-### User Manual (also found in `docs/MANUAL.md`)
+### User Manual
 https://docs.google.com/document/d/1DYoyfdU3NEk_y0oyIznjWPXkmXzYKl6xjlp__9z-V4k/edit?usp=sharing
 
-### Final Presentation link (also found in `teams/FINAL_PRESENTATION.md`)
+### Final Presentation link
 https://youtu.be/kpc7oCals_k
 
 ## License
